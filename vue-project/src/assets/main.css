@@ -1,0 +1,1132 @@
+@import './base.css';
+@import url('https://fonts.googleapis.com/css?family=Jura:wght@300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+#app {
+}
+
+
+#back-to-top-btn-container {
+    position: fixed;
+    border-radius: 30px;
+    border: 1px black solid;
+    bottom: 60px; 
+    padding: 10px;
+    right: 40px; 
+    z-index: 999999; 
+    background-color: #DEDEDE ;
+  }
+  
+  #back-to-top-btn {
+    display: block;
+    width: 30px; /* Adjust the width of the button image */
+    height: 30px; /* Adjust the height of the button image */
+    background-image: url('../assets/icons/icons8-top-50.png'); /* Replace with the path to your custom image */
+    background-size: cover;
+  }
+
+/* ------------------------------------------ NAVGATION  ------------------------------------------  */
+
+.nav-bar{
+    height: 10vh;
+    text-align: center;
+    align-items: center;
+    position: fixed;
+    bottom: 4vh;
+    width: 100%;
+    max-width: 2000px;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    z-index: 999;
+    border: 1px black;
+    border-style: solid;
+    background-color: #DEDEDE;
+}
+
+.move-top {
+    top: 0;
+    bottom: auto;
+  }
+  
+  .move-bottom {
+    top: auto;
+    bottom: 4vh;
+  }
+
+.nav-link{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+a{
+    display: flex;
+    align-items: center;
+    font-family: 'Jura', sans-serif;;
+}
+
+a .num{
+    display: flex;
+    margin-bottom: 10px;
+    width: 30px;
+    height: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-bar a:hover{
+    font-weight: 500;
+}
+
+a .active{
+    border: 1px black;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+a .active-white{
+    border: 1px white;
+    border-style: solid;
+    border-radius: 3px;
+}
+
+a .active:hover{
+    border: 2px black;
+    border-style: solid;
+}
+
+/* ------------------------------------------ NEWSLETTER POPUP  ------------------------------------------  */
+
+#news-popup{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    background-color: #DEDEDE;
+    width: 600px;
+    padding: 20px 50px;
+    box-shadow:  15px 15px rgba(0,0,0,0.08);
+    border: 1px black;
+    border-style: solid;
+    border-radius: 3px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+#news-popup .popup-content{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction:column;
+}
+
+#news-popup .popup-content img{
+    margin-top: 20px;
+    max-width: 200px;
+}
+
+#news-popup .popup-content h2{
+   margin: 30px 0 20px;
+}
+
+#news-popup .popup-content p{
+    text-align: center;
+}
+
+#news-popup .popup-content .inputbox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+
+#news-popup .popup-content .inputbox input,
+.input-error {
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+#news-popup .popup-content .inputbox input {
+    width: 25rem;
+    height: 2.4em;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.input-error {
+    color: #863441;
+}
+.btn-close{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+}
+
+.btn-close img{
+    width: 30px;
+}
+
+.blur {
+    filter: blur(20px);
+    pointer-events: none;
+    animation: blur 2s ease;
+}
+
+@keyframes blur {
+    0% {
+        -webkit-filter: blur(0px);
+        -moz-filter: blur(0px);
+        -o-filter: blur(0px);
+        -ms-filter: blur(0px);
+    }
+    50% {
+        -webkit-filter: blur(20px);
+        -moz-filter: blur(20px);
+        -o-filter: blur(20px);
+        -ms-filter: blur(20px);
+    }
+}
+
+/* ------------------------------------------ HOME  ------------------------------------------  */
+
+.home-page{
+    background-color: #DEDEDE;
+}
+
+.hero-home{
+    min-height: 84vh;
+    display: flex;
+    border-right: 1px black;
+    border-left: 1px black;
+    border-style: solid;
+    border-top: none;
+    border-bottom: none;
+    padding-bottom: 6vh;
+}
+
+.hero-text-box{
+    margin-left: 60px;
+    margin-top: 60px;
+    flex-direction: column;
+    justify-content: center;
+}
+.hero-home h1 {
+    font-size: 4em;
+}
+.hero-home h2 {
+    font-size: 1.5em;
+}
+
+
+
+.hero-column{
+    width: 50%;
+    height: 84vh;
+    align-items: center;
+    position: relative;
+}
+
+.hero-img-1{
+    display: -webkit-box;
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+}
+
+.hero-img-2{
+    display: -webkit-box;
+    height: 40%;
+    margin-left: auto;
+    margin-right: 40px;
+    margin-top: 40px;
+}
+
+.hero-about{
+    padding: 10%;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-about p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.btn{
+    margin: 20px 0px;
+    width: fit-content;
+    padding: 5px 5px;
+    font-family: 'Jura', sans-serif;
+    font-weight: 400;
+    text-decoration: none;
+    background-color: #DEDEDE ;
+    border: 1px black;
+    border-style: solid;
+    border-radius: 3px;
+    color: black;
+    transition: 0.5s;
+    font-size: 1em;
+}
+
+.btn:hover{
+    border: 2px black;
+    border-style: solid;
+    font-weight: 500;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+
+.footer-home{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 4vh;
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    background-color: #282828;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    position: fixed;
+    bottom: 0;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+footer{
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 4vh;
+    width: 100%;
+    max-width: 2000px;
+    display: flex;
+    background-color: #282828;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Jura', sans-serif;
+    position: relative;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
+footer p{
+    display: flex;
+    align-items: center;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+    font-style: italic;
+}
+
+.popup-success,
+.popup-error {
+    color: white;
+    padding: 8px;
+    font-weight: 400;
+    border-radius: 3px;
+    font-size: 0.8em;
+    margin: 30px 0;
+}
+
+.popup-success {
+    background: #4d894d;
+}
+.popup-error {
+    background: #863441;
+}
+
+
+/* ------------------------------------------ ABOUT  ------------------------------------------  */
+
+.about-page {
+    color: white;
+    border-color: white;
+    background-color:#131313 ;
+}
+
+.dark-background{
+    background-color: #131313;
+    color: white;
+}
+
+#about-section-hero{
+    border: 1px white;
+    border-style: solid;
+    overflow: hidden;
+    position: sticky;
+    top: 10vh;
+    height: 96vh;
+}
+
+#about-section-hero h1{
+    position: absolute;
+    top: 10vh;
+    color: white;
+    margin-left: 60px;
+    width: 64%;
+    font-size: 6em;
+}
+
+.about-hero-img{
+    background-image: url('../assets/images/about_hero_img.png');
+    background-size: cover;
+    background-position: bottom;
+    width: 100%;
+    height: 100%;
+}
+
+.about-section {
+    background-color: #131313;
+    color: white;
+    height: 86vh;
+    border: 1px white;
+    border-style: solid;
+    position: sticky;
+    top: 10vh;
+}
+
+.about-section-slide{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.about-col{
+    width: 50%;
+    border-right: 1px white solid;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-col .text-box{
+    margin: 40px;
+    max-width: 500px;
+}
+
+.about-col .text-box p{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+.journey-img{
+    background-image: url('../assets/images/journey-img.png');
+    width:50%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.atelier-img{
+    background-image: url('../assets/images/atelier-img.png');
+    width:50%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.artistry-img{
+    background-image: url('../assets/images/artistry-img2.png');
+    width:50%;
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.footer-about{
+    border: 1px white;
+    border-style: solid;
+    position: sticky;
+    bottom: 0;
+}
+
+/* ------------------------------------------ WORKSHOPS  ------------------------------------------  */
+
+.workshops-page {
+    color: white;
+    border-color: white;
+    background-color: #131313;
+    
+}
+
+.workshops-section{
+    position: relative;
+    height: 96vh;
+    border: 1px white solid;
+    border-top: 0;
+    overflow: hidden;
+}
+
+.carousel{
+    position: absolute;
+    top: 0;
+    height: 96vh;
+    width: 100%;
+    z-index: 1;
+    overflow: hidden;
+    z-index: 1; 
+}
+
+.carousel img{
+   height: 100%;
+   width: 2000px;
+}
+
+
+#workshops-hero-textbox{
+    color: white;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+.date{
+    font-size: 1.8em;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-weight: 500;
+    font-family: 'Jura', sans-serif;;
+}
+
+#workshops-hero-textbox h3{
+    margin: 120px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    z-index: 5;
+}
+
+#workshops-hero-textbox h1{
+    z-index: 5;
+}
+#workshops-hero-textbox p{
+    z-index: 5;
+}
+
+#btn-white{
+    border: 1px white solid;
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 5;
+}
+
+.dots {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    z-index: 999;
+    margin-bottom: 30px;
+}
+  
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+    z-index: 999;
+}
+  
+.dot.active {
+    background-color: #ffffff;
+}
+
+#workshop-section-registration{
+    position: relative;
+    background-color:#131313;
+    text-align: center;
+    border: 1px white solid;
+}
+
+#registration-text-box{
+    margin-top: 60px;
+}
+
+#registration-text-box h2{
+    font-size: 1.5em;
+    margin: 5px;
+}
+
+#registration-text-box h1{
+    font-size: 4.2em;
+    margin-top: 60px;
+    margin-bottom: 20px;
+}
+
+#registration-text-box h3{
+    font-weight: 200;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-bottom: 60px;
+}
+
+.registration-form{
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    width: 35rem;
+
+}
+
+.registration-form label{
+    width: 100%;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.registration-form input{
+    font-size: 1em;
+    height: 2.4em;
+    border: 1px solid black;
+    border-radius: 3px;
+    padding: 5px 10px;
+    margin-bottom: 16px;
+    width: 35rem;
+}
+
+.registration-form .btn{
+    width: fit-content;
+}
+
+#additional-info{
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 60px;
+    max-width: 45rem;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.banner{
+    height: 50vh;
+    width: 100%;
+    border: 1px solid white;
+    overflow: hidden;
+    background-image: url('../assets/images/workshops-img-banner.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/* ------------------------------------------ CONTACT  ------------------------------------------  */
+
+
+.contact-section{
+    position: relative;
+    top: 10vh;
+    width: 100%;
+    height: 86vh;
+    display: flex;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.contact-form{
+    padding: 30px;
+    height: 100%;
+    width: 50%;
+    border: 1px black;
+    border-style: solid;
+    border-top: 0;
+    border-bottom: 0;
+}
+
+.contact-form div{
+    width: 40rem;
+    margin-left: auto;
+    margin-right:auto;
+    margin-top: 50px;
+}
+
+.contact-form div h2{
+    margin-bottom: 30px;
+}
+
+#contact-form {
+    align-items: start;
+    margin-top: 50px;
+    width: auto;
+    max-width: 40rem;
+}
+
+#contact-form input{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+.contact-form div div{
+    display: flex;
+    margin-top: 10px ;
+    margin-bottom: 10px;
+}
+.contact-form div div p{
+    margin-right: 10px;
+}
+.bold{
+    font-weight: 500;
+}
+#contact-text{
+    margin-top: 30px;
+}
+
+
+#contact-form textarea{
+    height: 10em;
+    width: 100%;
+    border: 1px black;
+    border-style: solid;
+    border-radius: 3px;
+    font-size: 1em;
+    padding: 10px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+#contact-btn{
+    justify-content: start;
+}
+
+.contact-img{
+    height: 100%;
+    width: 50%;
+    background-image: url('../assets/images/contact-img.png');
+    overflow: hidden;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*------------------------------------------- RESPONSIVNESS ----------------------------------------- */
+
+
+@media (max-width: 1480px){
+
+    /* ABOUT */
+    #about-section-hero h1{
+        font-size: 4em;
+    }
+
+    /* CONTACT */
+    .contact-form div{
+        width: auto;
+        max-width: 30rem;
+    }
+
+    #contact-form {
+        width: auto;
+        max-width: 30rem;
+    }
+
+    #contact-form input{
+        width: 100%;
+        max-width: 30rem;
+    }
+
+}
+
+@media (max-width: 1000px){
+
+    /* WORKSHOPS */
+    .testimonial-text-box{
+        max-width: 30rem;
+        height: 25rem;
+    }
+    #prev-btn{
+        left: -4rem;
+        top: 10rem;
+    }
+    #next-btn{
+        right: -4rem;
+        top: 10rem;
+    }
+}
+
+@media (max-width: 850px){
+
+    /* HOME */
+    #hero-col-1{
+        width: 50%;
+    }
+    #hero-col-1{
+        width: 50%;
+    }
+    .hero-img-2{
+        margin-left:auto;
+        margin-right: auto;
+        height: 30%;
+    }
+    .hero-img-1{
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px){
+
+    h1 {
+        font-size: 3em;
+    }
+    h1 {
+        font-size: 1.8em;
+    }
+    p{
+        font-size: 0.9em;
+    }
+
+    /* HOME */
+    .hero-text-box{
+        margin-left: 40px;
+    }
+
+    /* CONTACT */
+    .contact-section{
+        border: black 1px solid;
+        border-top: none;
+        height: auto;
+        flex-direction: column;
+        overflow:scroll;
+        position: relative;
+    }
+    .contact-form{
+        width: 100%;
+        border: none;
+    }
+    .contact-img{
+        width: 100%;
+        height: 600px;
+        position: relative;
+        overflow: scroll;
+        background-position: bottom;
+    }
+    .contact-form div{
+        min-width: 100%;
+        margin-left: auto;
+        margin-right:auto;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    #contact-form {
+        min-width: 100%;
+    }
+    #contact-form input{
+        min-width: 100%;
+    }
+
+    /* WORKSHOPS */
+    .testimonial-text-box{
+        height:20rem;
+    }
+
+    #workshops-hero-textbox h1{
+        font-size: 4em;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+@media (max-width: 700px){
+
+    /* ABOUT */
+    #about-section-hero h1{
+        margin-left: 30px;
+    }
+
+    /* HOME */
+    #news-popup{
+        width: 90%;
+        padding: 30px;
+    }
+    #news-popup-inputs{
+        width: 100%;
+    }
+    .popup-content img{
+        max-height: 150px;
+    }
+
+    /* WORKSHOPS */
+    .testimonial-text-box{
+        height:30rem;
+        width: 20rem;
+    }
+    #registration-text-box{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .registration-form{
+        width: 90%;
+    }
+    .registration-form label{
+        width: 100%;
+    }
+    .registration-form input{
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px){
+
+    /* ABOUT */
+    #about-section-hero h1{
+        font-size: 3em;
+        margin-left: 30px;
+    }
+    .about-section-slide{
+        flex-direction: column;
+        width: 100%;
+    }
+    .about-section-slide div{
+        width:100%;
+        height: 50%;
+    }
+    .about-col{
+        border-right: 0;
+        width: 100%;
+    }
+    .about-col .text-box{
+        margin-top: 60px;
+        margin-left: 30px;
+        margin-right: 30px;
+        width: fit-content;
+    }
+   
+
+
+    /* NAVIGATION */
+    .nav-link p{
+        font-size: 0.8em;
+    }
+
+    /* HOME */
+    .hero-home h1{
+        font-size: 5em;
+    }
+    .hero-home{
+        flex-direction: column;
+        border-top: 1px black solid;
+    }
+    .hero-img-1{
+        position: relative;
+        width: 100%;
+    }
+    .hero-column, #hero-col-1, #hero-col-2{
+        width: 100%;
+        height: fit-content;
+    }
+    #hero-col-1{
+        height: auto;
+    }
+    .hero-img{
+        margin-top: 30px;
+    }
+    #hero-col-2{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .hero-about{
+        margin: 30px;
+        padding: 0;
+    }
+    .hero-img-2{
+        position: relative;
+        margin-top: 0;
+    }
+    .hero-img-2{
+        margin: 30px;
+        width: fit-content;
+    } 
+
+    /* ABOUT */
+    .hide-mobile {
+        display: none !important;
+    }
+
+    /* WORKSHOPS */
+    #workshops-hero-textbox h3{
+        font-size: 1em;
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+
+}
+
+@media (max-width: 500px){
+
+    .footer-about{
+        flex-direction: column;
+        height: 6vh;
+    }
+    .footer-home{
+        flex-direction: column;
+        height: 6vh;
+    }
+    .footer-about p{ 
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .footer-about a{ 
+        flex-direction: column;
+        margin-bottom: 5px;
+        font-size: 1em;
+    }
+    .footer-home p{ 
+        flex-direction: column;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    .footer-home a{ 
+        flex-direction: column;
+        margin-bottom: 5px;
+        font-size: 1em;
+    }
+
+    .move-bottom {
+        top: auto;
+        bottom: 6vh;
+    }
+
+
+    /* WORKSHOPS */
+    #additional-info{
+        margin-top: 60px;
+        font-size: 0.7em;
+    }
+    #testimonials-text-box{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    #testimonials-text-box p{
+        margin-left: 30px;
+        margin-right: 30px;
+    }
+    .testimonial{
+        margin-bottom: 100px;
+    }
+    #testimonial-content{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .testimonial-text-box{
+        box-shadow:none;
+        height: 25rem;
+        width: 100%;
+    }
+    .testimonial-name{
+        bottom: 10px;
+    }
+    #prev-btn{
+        left: 4rem;
+        top: 26rem;
+    }
+    #next-btn{
+        right: 4rem;
+        top: 26rem;
+    }
+    #registration-text-box h1{
+        font-size: 2em;
+        margin-top: 40px
+    }
+    #registration-text-box h3{
+        font-size: 1em;
+    }
+    #registration-text-box div h2{
+        font-size: 1.2em;
+    }
+      
+}
+
+@media (max-width: 400px){
+    p{
+        font-size: 0.8em;
+    }
+    h1{
+        font-size: 3em;
+    }
+    h2{
+        font-size: 1.2em;
+    }
+
+    /* HOME */
+    .hero-text-box{
+        margin: 20px;
+        text-align: center;
+    }
+    .btn{
+        font-size: 0.8em;
+    }
+    #btn-signup{
+        font-size: 0.8em;
+    }
+    .hero-home h1{
+        font-size: 3em;
+    }
+    .hero-home h2{
+        font-size: 1.2em;
+    }
+    .hero-img-2{
+        margin: 0;
+        max-width: 350px;
+    }
+
+    /* ABOUT */
+
+    /*WORKSHOPS*/
+    #workshops-hero-textbox h1{
+        font-size: 3em;
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .date{
+        font-size: 1.2em;
+    }
+}
+
+.recaptcha-box {
+    margin-bottom: 15px;
+}
+
+
+.input-error {
+    color: #863441;
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 5px;
+}
+
+.dark-background .input-error {
+    padding: 3px 6px;
+    border-radius: 5px;
+    background-color: #d596a0;
+    color: #640f1e;
+    font-weight: 400;
+    top: -5px;
+    position: relative;
+}

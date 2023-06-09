@@ -1,0 +1,243 @@
+<style>
+
+.about-section:first-of-type {
+    border-top: none !important;
+}
+.about-section:last-of-type {
+    border-bottom: none !important;
+}
+
+.about-section.about-section-slide {
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+
+}
+
+.about-section .row{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+    height: 50vh;
+    position: relative;
+    justify-content: center;
+}
+
+.about-section .row div{
+    width: 50%;
+}
+
+.empty-div{
+    min-width: 600px;
+}
+.col-40,
+.col-50,
+.col-60 {
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+.col-40 { width: 40%; }
+.col-50 { width: 50%; }
+.col-60 { width: 60%; }
+
+.text-box p{
+    margin-top: 30px;
+    text-align: justify;
+}
+
+#journey-img {
+    max-height: 30%;
+    object-fit: contain;
+    display: block;
+    margin-bottom: 20px;
+    padding-right: 10px;
+    max-width: 90%;
+}
+#journey-text {
+    padding-right: 20px;
+}
+.img-block-bottom {
+    margin-top: 20px;
+    overflow: hidden;
+    align-self: end;
+}
+
+#atelier-img {
+    max-width: 100%;
+    display: block;
+    max-height: 100%;
+}
+
+.col-artistry-right {
+    justify-content: center;
+    display: none;
+}
+#artistry-img1 {
+    width: 100%;
+    display: block;
+    margin-bottom: 40px;
+}
+
+#artistry-img2 {
+    width: 90%;
+    max-height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: 0;
+}
+
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #journey-text {
+        padding-right: 60px;
+    }
+    .img-block-bottom {
+        margin-top: 40px;
+    }
+
+    #about-section-hero h1{
+        top: 20vh;
+        color: white;
+        margin-left: 60px;
+        width: 40%;
+        font-size: 5em;
+    }
+    .hero-home h1 {
+        font-size: 3.6em;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    
+
+    /* about */
+    .col-artistry-right {
+        display: flex;
+    }
+    #journey-img {
+        max-height: 40%;
+        margin-bottom: 40px;
+    }
+    .about-section.about-section-slide {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .col-artistry-left {
+        width: 100%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #artistry-img1 {
+        margin-top: 100px;
+    }
+    .about-section.about-section-slide {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+    #journey-img {
+        max-height: 50%;
+    }
+    #atelier-text {
+        max-width: 70%;
+    }
+}
+@media only screen and (max-width: 1100px) {
+    .col-journey-left,
+    .col-journey-right {
+        width: 50%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #artistry-img1 {
+        margin-top: 80px;
+    }
+}
+</style>
+
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="dark-background">
+    <a id="top"></a>
+    <div class="sticky-container">
+      <div id="navigation"></div>
+      <section class="about-section" id="about-section-hero">
+        <div class="about-hero-img"></div>
+        <h1>Unveiling the Beauty and Simplicity of Raw Materials</h1>
+      </section>
+
+      <section class="about-section about-section-slide">
+        <div class="col-40 col-journey-left">
+          <img id="journey-img" class="hide-mobile" src="../assets/images/journey-img.png" alt="">
+          <div id="journey-text" class="text-box">
+            <h2>Journey</h2>
+          <p>
+            At Edminor, we treasure the journey of pottery as much as the final product. With a deep respect for its history and cultural significance, we craft exquisite vessels that embody minimalism. Our commitment to sustainability drives our use of eco-friendly materials and methods. From sourcing the finest materials to the skilled hands shaping the clay, our artisans infuse their expertise into each piece. The result is timeless pottery that radiates beauty and durability. Join us on this transformative pottery journey and experience its power in your everyday life.
+          </p>
+          </div>
+        </div>
+        <div class="col-60 col-journey-right">
+          <div id="atelier-text" class="text-box">
+            <h2>Atelier</h2>
+            <p>
+              Our atelier is a tranquil sanctuary where skilled artisans bring pottery to life. With meticulous attention to detail, they blend traditional techniques and modern innovations, pushing the boundaries of pottery design. Collaborative exploration fuels creativity as artists experiment with textures, glazes, and shapes. The Edminor Atelier is where simple clay transforms into unique works of minimalist art, embodying the essence of craftsmanship and creativity.
+            </p>
+          </div>
+          <div class="img-block-bottom">
+            <img id="atelier-img" src="../assets/images/atelier-img.png" alt="">
+          </div>
+        </div>
+      </section>
+
+      <section class="about-section about-section-slide">
+        <div class="col-40 col-artistry-left">
+          <img id="artistry-img1" src="../assets/images/artristry-img1.png" alt="">
+          <div id="text-artistry" class="text-box">
+            <h2> Classes & Workshops</h2>
+              <p>
+                We host weekly workshops at our atelier in the heart of Berlin. Immerse yourself in the world of artistry and craftsmanship as our talented artisans guide you through the process of creating your own unique pottery pieces. Whether you're a novice eager to learn the fundamentals or a seasoned potter seeking to refine your skills, our workshops cater to all levels of expertise. We also offer a selection of free online pottery masterclasses and workshops that are open to enthusiasts from around the globe. Don't miss out on this extraordinary opportunity to learn from renowned experts join us on this inspiring journey and let the transformative power of pottery enrich your life. 
+              </p>          
+          </div>
+        </div>
+        <div class="col-60 col-artistry-right hide-mobile">
+          <img id="artistry-img2" src="../assets/images/artistry-img2.png" alt="">
+        </div>
+      </section>
+    </section>
+
+    <div id="back-to-top-btn-container">
+      <a href="#" id="back-to-top-btn"></a>
+    </div>
+    
+    <footer class="footer-about">
+      <p>2023 Edminor  |  Web by Larisa Bedeniković </p>
+      <a href="">info@edminorpottery.com</a>
+    </footer>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

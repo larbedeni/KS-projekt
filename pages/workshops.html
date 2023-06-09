@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshops</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body class="dark-background">
+    <a id="top"></a>
+    <section id="workshops-section-hero" class="workshops-section">
+      <div id="navigation"></div>
+      <div id="workshops-hero-textbox">
+        <p>New Date</p>
+        <p class="date">July 20th, 2023</p>
+        <h1>Edminor Masterclass</h1>
+        <h3>
+          Sign up for our next online workshop and masterclass. Join our
+          exclusive community of pottery artists.
+        </h3>
+        <div
+          id="btn-white"
+          class="btn"
+          onclick="scrollToSection('workshop-section-registration')"
+        >
+          SIGN UP
+        </div>
+      </div>
+      <div class="carousel">
+        <img src="../assets/images/workshops-carousel-img1.png" alt="" />
+        <img src="../assets/images/workshops-carousel-img2.png" alt="" />
+        <img src="../assets/images/workshops-carousel-img3.png" alt="" />
+      </div>
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </section>
+
+    <section id="workshop-section-registration">
+      <div id="registration-text-box">
+        <div>
+          <h2 class="date">Registration Form</h2>
+          <h2 class="date">Date: July 20th, 2023</h2>
+        </div>
+        <h1>Edminor Masterclass</h1>
+        <h3>
+          Fill out the registration form and sign up for our free online btn
+          masterclass and workshop.
+        </h3>
+        <form class="registration-form" action="">
+          <label for="firstname">First Name:*</label>
+          <input
+            type="text"
+            id="firstname"
+            class="input-field"
+            required
+            name="firstname"
+            placeholder="Your First Name"
+          />
+          <label for="lastname">Last Name:*</label>
+          <input
+            type="text"
+            class="input-field"
+            id="lastname"
+            required
+            name="lastname"
+            placeholder="Your Last Name"
+          />
+          <label for="email">E-mail:*</label>
+          <input
+            type="email"
+            name="email"
+            class="input-field"
+            required
+            id="email"
+            placeholder="Your E-mail"
+          />
+          <input
+            class="btn"
+            id="btn-workshops"
+            type="submit"
+            value="REGISTER"
+          />
+        </form>
+        <p id="additional-info">
+          The comprehensive schedule and esteemed facilitators for the workshops
+          will be unveiled at a later juncture. All participants who have signed
+          up will receive this information conveniently delivered to their
+          registered email addresses.
+        </p>
+      </div>
+    </section>
+
+    <section class="banner"></section>
+
+    <section id="workshops-section-testimonials">
+      <div id="testimonials-text-box">
+        <h2>Testimonials</h2>
+        <p>
+          Discover the power of pottery through heartfelt testimonials from our
+          workshop participants. Be inspired by their stories of growth,
+          creativity, and the joy found in our workshops. Join us and embark on
+          your own transformative pottery journey today.
+        </p>
+        <div class="testimonial">
+          <div class="testimonial-text-box">
+            <div class="circular-image-frame">
+              <img src="../assets/images/emily.jpg" id="image" alt="" />
+            </div>
+            <div class="slider-row">
+              <div id="prev-btn" class="custom-icon"></div>
+              <div id="testimonial-content">
+                <div class="testimonial-name"></div>
+              </div>
+              <div id="next-btn" class="custom-icon"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="accordian-section">
+      <div id="testimonials-text-box">
+        <h2>FAQs</h2>
+        <p>
+          Explore the answers to some commonly asked questions about our pottery masterclasses and workshops. 
+        </p>
+      <div id="accordian-box">
+        <div class="accordian-q">
+          Q: How can I register for the pottery masterclasses and workshops?
+        </div>
+        <div class="accordian-a">
+          A: To register, simply visit our website and fill out the registration
+          form on the workshop section. Provide your name, email, and other
+          required details, and click the "REGISTER" button.
+        </div>
+        <div class="accordian-q">
+          Q: Are the masterclasses and workshops free of charge?
+        </div>
+        <div class="accordian-a">
+          A: Yes, all our online pottery masterclasses and workshops are completely
+          free. We believe in making pottery education accessible to everyone.
+        </div>
+        <div class="accordian-q">
+          Q: What materials or equipment do I need for the masterclasses?
+        </div>
+        <div class="accordian-a">
+          A: The required materials and equipment vary for each masterclass. Once
+          you register, you will receive a confirmation email containing a
+          detailed list of materials needed for the specific workshop you have
+          chosen. We strive to keep the required materials accessible and
+          budget-friendly.
+        </div>
+        <div class="accordian-q">
+          Q: Can beginners participate in the masterclasses?
+        </div>
+        <div class="accordian-a">
+          A: Absolutely! Our masterclasses are designed to cater to all skill
+          levels, including beginners. Whether you're a novice or an experienced
+          potter, you'll find valuable insights and techniques to enhance your
+          pottery skills.
+        </div>
+        <div class="accordian-q">
+          Q: How can I access the workshop materials and recordings?
+        </div>
+        <div class="accordian-a">
+          A: After registering for a masterclass, you will gain access to our
+          online learning platform. There, you will find all the workshop
+          materials, including instructional videos, presentation slides, and
+          additional resources. You can access the platform anytime and revisit
+          the materials as often as you like.
+        </div>
+      </div>
+    </section>
+
+    <div id="back-to-top-btn-container">
+      <a href="#" id="back-to-top-btn"></a>
+    </div>
+
+    <footer class="footer footer-about">
+      <p>2023 Edminor | Web by Larisa Bedeniković</p>
+      <a href="">info@edminorpottery.com</a>
+    </footer>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/testimonial.js"></script>
+    <script src="../assets/js/carousel.js"></script>
+    <script src="../assets/js/script.js"></script>
+  </body>
+</html>

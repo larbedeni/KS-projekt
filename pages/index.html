@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <div id="navigation"></div>
+    <section class="hero-home">
+      <div class="hero-column" id="hero-col-1">
+        <div class="hero-text-box">
+          <h1>Edminor</h1>
+          <h2>Raw essence of pottery-making</h2>
+        </div>
+        <div class="hero-img">
+          <img
+            class="hero-img-1"
+            src="../assets/images/landing_img_1.png"
+            alt=""
+          />
+        </div>
+      </div>
+      <div class="hero-column" id="hero-col-2">
+        <img
+          class="hero-img-2"
+          src="../assets/images/landing_img_2.png"
+          alt=""
+        />
+        <div class="hero-about">
+          <h2>Online Community</h2>
+          <p>
+            Welcome to Edminor Pottery, a thriving pottery business and online
+            community dedicated to the art of pottery making. Whether you're a beginner or
+            an experienced potter, our workshops offer valuable insights,
+            techniques, and inspiration to enhance your skills. Don't miss out
+            on our latest updates, exclusive offers, and community events! Join
+            our newsletter and become part of the Edminor Pottery community
+            today. 
+          </p>
+          <div class="btn" id="btn-join-now">JOIN NOW</div>
+        </div>
+      </div>
+    </section>
+    <footer class="footer footer-home">
+      <p>2023 Edminor | Web by Larisa Bedeniković</p>
+      <a href="">info@edminorpottery.com</a>
+    </footer>
+
+    <div id="news-popup" class="hidden">
+      <div class="popup-content">
+        <img src="../assets/images/news-popup-img.png" alt="" />
+        <h2>Join the Community</h2>
+        <p>
+          Join our newsletter today and be the first to receive updates on new
+          workshops, exclusive offers, and insider tips from expert potters.
+          Don't miss out on this opportunity to enhance your pottery skills and
+          become part of our thriving community.
+        </p>
+        <div id="news-popup-inputs">
+          <div class="inputbox">
+            <input
+              id="email-input"
+              type="email"
+              placeholder="Enter E-mail"
+              required
+            />
+            <div id="email-error" class="input-error hidden">
+              Please enter a valid e-mail address.
+            </div>
+          </div>
+          <div class="inputbox">
+            <input class="btn" id="btn-signup" type="submit" value="SIGN UP" />
+          </div>
+        </div>
+        <div id="news-popup-success" class="popup-success hidden">
+          You have successfully subscribed to our newsletter.
+        </div>
+      </div>
+      <div class="btn-close">
+        <img src="../assets/icons/icons8-close-100.png" alt="" />
+      </div>
+    </div>
+    <script src="../assets/js/navigation.js"></script>
+    <script src="../assets/js/newsletter.js"></script>
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<template>
+    <a id="top"></a>
+    <div class="sticky-container">
+      <section class="about-section" id="about-section-hero">
+        <div class="about-hero-img"></div>
+        <h1>Unveiling the Beauty and Simplicity of Raw Materials</h1>
+      </section>
+
+      <section class="about-section about-section-slide">
+        <div class="about-col">
+          <div id="journey-text" class="text-box">
+            <h2>Journey</h2>
+          <p>
+            At Edminor, we treasure the journey of pottery as much as the final product. 
+            With a deep respect for its history and cultural significance, we craft vessels 
+            that embody minimalism. Our commitment to sustainability drives our use of eco-friendly materials and methods. 
+            From sourcing the finest materials to the skilled hands shaping the clay, our artisans infuse their expertise into each piece. 
+            The result is timeless pottery that radiates beauty and durability. 
+          </p>
+          </div>
+        </div>
+        <div class="journey-img">
+        </div>
+      </section>
+
+      <section class="about-section about-section-slide">
+        <div class="about-col">
+          <div id="atelier-text" class="text-box">
+            <h2>Atelier</h2>
+          <p>
+              Our atelier is a tranquil sanctuary where skilled artisans bring pottery to life. With meticulous attention to detail, they blend traditional techniques and modern innovations, pushing the boundaries of pottery design. Collaborative exploration fuels creativity as artists experiment with textures, glazes, and shapes. The Edminor Atelier is where simple clay transforms into unique works of minimalist art, embodying the essence of craftsmanship and creativity.
+          </p>
+        </div>
+        </div>
+        <div class="atelier-img">
+        </div>
+      </section>
+
+      <section class="about-section about-section-slide">
+        <div class="about-col">
+          <div id="classes-text" class="text-box">
+            <h2>Classes & Workshops</h2>
+          <p>
+            We host weekly workshops at our atelier in the heart of Berlin. 
+            Immerse yourself in the world of artistry and craftsmanship as our 
+            talented artisans guide you through the process of creating your own 
+            unique pottery pieces. Whether you're a novice eager to learn the 
+            fundamentals or a seasoned potter seeking to refine your skills, 
+            our workshops cater to all levels of expertise. We also offer a 
+            selection of free online pottery masterclasses and workshops that 
+            are open to enthusiasts from around the globe. 
+          </p>
+        </div>
+        </div>
+        <div class="artistry-img">
+        </div>
+      </section>
+    </div>
+
+
+    <div id="back-to-top-btn-container">
+      <a href="#" id="back-to-top-btn"></a>
+    </div>
+  
+</template>

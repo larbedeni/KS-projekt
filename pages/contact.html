@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;500&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../style.css" />
+  </head>
+  <body>
+    <a id="top"></a>
+    <div id="navigation"></div>
+    <section class="contact-section">
+      <div class="contact-form">
+        <div>
+          <h2>Get in Touch</h2>
+          <div>
+            <p>Address: </p>
+            <p class="bold">
+                117 Riesaer Straße, Berlin
+            </p>
+          </div>
+          <div>
+            <p>E-mail: </p>
+            <p class="bold">
+                info@edminorpottery.com
+            </p>
+          </div>
+        
+        </div>
+        <form class="registration-form" id="contact-form" action="">
+          <label for="firstlastname">First and Last Name:*</label>
+          <input
+            type="text"
+            id="firstlastname"
+            class="input-field"
+            required
+            name="firstlastname"
+            placeholder="Your First Name"
+          />
+          <label for="email">E-mail:*</label>
+          <input
+            type="email"
+            name="email"
+            class="input-field"
+            required
+            id="email"
+            placeholder="Your E-mail"
+          />
+          <label for="message">Message:*</label>
+          <textarea
+            name="message"
+            class="input-field"
+            required
+            id="message"
+            placeholder="Write your message here"
+          ></textarea>
+          <input class="btn" id="contact-btn" type="submit" value="SEND" />
+        </form>
+      </div>
+      <div class="contact-img"></div>
+    </section>
+    <footer class="footer footer-home">
+      <p>2023 Edminor | Web by Larisa Bedeniković</p>
+      <a href="">info@edminorpottery.com</a>
+    </footer>
+    <script src="../assets/js/navigation.js"></script>
+  </body>
+</html>
